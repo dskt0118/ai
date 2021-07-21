@@ -26,21 +26,19 @@ var headerHeight = header.outerHeight(true);
 });
 
 ////welcomeふわっと文字////
- $(function () {
-  var target = $(".welcome");
-  var el = target.offset().top;
   $(window).on('scroll', function() {
-   // var scroll = $(this).scrollTop();
-//		console.log('wel:'+el);
-//		console.log('scr:'+$(this).scrollTop());
-    if ($(this).scrollTop() <=  el) {
-      target.removeClass('view');
-    }
-		else 
-			{
-      target.addClass('view');
-    }
-  });
+  var target = $(".welcome");
+  var el = target.offset().top; //welcomeクラスのtopからの位置(固定)
+  var elementHeight = target.innerHeight(); //welcomeクラスの高さ(固定)
+  var scrollTop = $(this).scrollTop(); //スクロール位置(変動)
+  var windowHeight = $(window).height(); //window高さ(ほぼ固定)
+
+  if (scrollTop + windowHeight  <=  el || scrollTop >= el + elementHeight) { //welcomeよりも画面が上にある場合 または　下にある場合
+    target.removeClass('view');
+  }
+  else {
+    target.addClass('view');
+  }
 });
 
 

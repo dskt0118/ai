@@ -181,8 +181,8 @@ nav.hNav ul {
 	font-size: 6vw;
 	word-spacing: .6em;
   opacity : 0;
-  transition: opacity 2s;
-	transition-delay: 1s;
+  transition: opacity 0.5s;
+	transition-delay: 0.5s;
 	transition-timing-function: ease-out;
 }
 .welcome.view {
