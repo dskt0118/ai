@@ -2,152 +2,334 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<title>TEX-MEX | メキシカン</title>
-	
+	<title>TEX-MEX || メキシカン</title>
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><!--googlefont-->
-<link rel="stylesheet" href="css/normalize.css"><!--リセット-->
-<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+	<script src="js/jquery-2.2.4.min.js"></script><!--jquery-->
+	<script src="js/jquery.colorbox-min.js"></script><!--colorbox-->
+	<script src="js/script_colorbox.js"></script><!--cbjs-->
+	<script src="js/script.js"></script><!--オリジナルjs-->
+	<link rel="stylesheet" href="css/colorbox.css"><!--colorboxのcss-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/png" href="images/fabicon.png">
 
 </head>
 
 <body>
-	<header>
+	<header id="header">
 	<div class="pageHeader">
-		<div class="maxWrapper">
-			<h1 class="headerLogo">
+		<div id="headerLogo" class="maxWrapper">
+			<h1 class="headerLogo_texmex">
 				<a href="index.html"><img src="images/logo.svg" alt="メキシカンの店TEX-MEXのロゴ"></a>
 			</h1>
 		</div><!--maxWrapper-->
-			<nav>
-				<div class="nav">
+			<nav id="headerNav" class="hNav">
+				<div class="hNavContainer">
 					<ul class="mainNav">
-						<li><a href="#">menu</a></li>
-						<li><a href="#">news</a></li>
-						<li><a href="#">about</a></li>
+						<li><a href="index.html">top</a></li>
+						<li><a href="menu.html">menu</a></li>
+						<li><a href="news.html">news</a></li>
+						<li><a href="about.html">about</a></li>
+<!--						<li><a href="about.html">about</a></li>-->
 					</ul>
-				</div><!--nav-->
+				</div><!--hNavContainer-->
 			</nav>
 		</div><!--pageHeader-->
 	</header>
 
-	<div>
-		<div class="MainImg">
+	<div class="childHeader">
+		<div class="mainImg">
 				<img src="images/menu_mainImage.jpg" alt="メニューページ">
-		</div><!--menuMainImg-->
-		<div class="Title">
-				<h2 class="pageTitle">menu</h2>
-		</div>
-	</div>
-	
+		</div><!--MainImg-->
+		<div class="chDeco"><img src="images/artega_red_ue.jpg" alt=""></div>
+		<div class="chTitle"><h2 class="pageTitle">menu</h2></div>
+		<div class="chDeco"><img src="images/artega_red_shita.jpg" alt=""></div>
+	</div><!--childHeader-->
+
 <div class="wrapper">
 
+	<div>
+		<div class="h3Container menuBorder">
+			<div class="foodMenu"><p>food</p></div>
+		</div><!--.h3Container menuBorder-->
 
-
-		
-		<div class="">
-		<h3 class="foodMenu">food</h3>
-		<div class="foodContainer">
-			<figure id="food01">
-				<a class=pop href="#">
+	<div class="foodContainer">
+		<figure id="">
+			<a class="pop" href="#food01">
 				<img src="images/menu_f01.jpg" alt="タコスの写真">
-				</a>
-				<figcaption>Taco<br><span class="jpMenu">タコス</span></figcaption>
-			</figure>
-			<figure id="food02">
-				<a class=pop href="#">
+			<figcaption>Taco<br><span class="jpMenu">タコス</span></figcaption>
+			</a>
+		</figure>
+		<figure id="">
+			<a class="pop" href="#food02">
 				<img src="images/menu_f02.jpg" alt="ブリトーの写真">
-				</a>
-				<figcaption>Burrito<br><span class="jpMenu">ブリトー</span></figcaption>
-			</figure>
-			<figure id="food03">
-				<a class=pop href="#">
+			<figcaption>Burrito<br><span class="jpMenu">ブリトー</span></figcaption>
+			</a>
+		</figure>
+		<figure id="">
+			<a class="pop" href="#food03">
 				<img src="images/menu_f03.jpg" alt="ファヒータの写真">
-				</a>
-				<figcaption>Fajita<br><span class="jpMenu">ファヒータ</span></figcaption>
-			</figure>
-			<figure id="food04">
-				<a class=pop href="#">
+			</a>
+			<figcaption>Fajita<br><span class="jpMenu">ファヒータ</span></figcaption>
+		</figure>
+		<figure id="">
+			<a class="pop" href="#food04">
 				<img src="images/menu_f04.jpg" alt="ケサディーヤの写真">
-				</a>
-				<figcaption>Quesadilla<br><span class="jpMenu">ケサディーヤ</span></figcaption>
-			</figure>
-			<figure id="food05">
-				<a class=pop href="#">
+			<figcaption>Quesadilla<br><span class="jpMenu">ケサディーヤ</span></figcaption>
+			</a>
+		</figure>
+		<figure id="">
+			<a class="pop" href="#food05">
 				<img src="images/menu_f05.jpg" alt="ナチョスの写真">
-				</a>
-				<figcaption>Nachos<br><span class="jpMenu">ナチョス</span></figcaption>
-			</figure>
-			<figure id="food06">
-				<a class=pop href="#">
+			<figcaption>Nachos<br><span class="jpMenu">ナチョス</span></figcaption>
+			</a>
+		</figure>
+		<figure id="">
+			<a class="pop" href="#food06">
 				<img src="images/menu_f06.jpg" alt="ワカモレの写真">
-				</a>
-				<figcaption>Chips&nbsp;&amp;&nbsp;Guacamole<br><span class="jpMenu">ワカモレ&amp;チップス</span></figcaption>
-			</figure>
-			<figure id="food07">
-				<a class=pop href="#">
+			<figcaption>Chips&nbsp;&amp;&nbsp;Guacamole<br><span class="jpMenu">ワカモレ&amp;チップス</span></figcaption>
+			</a>
+		</figure>
+		<figure id="">
+			<a class="pop" href="#food07">
 				<img src="images/menu_f07.jpg" alt="サルサの写真">
-				</a>
-				<figcaption>Chips&nbsp;&amp;&nbsp;Salsa<br><span class="jpMenu">サルサ&amp;チップス</span></figcaption>
-			</figure>
-			<figure id="food08">
-				<a class=pop href="#">
+			<figcaption>Chips&nbsp;&amp;&nbsp;Salsa<br><span class="jpMenu">サルサ&amp;チップス</span></figcaption>
+			</a>
+		</figure>
+		<figure id="">
+			<a class="pop" href="#food08">
 				<img src="images/menu_f08.jpg" alt="ハラペーニョポッパーの写真">
-				</a>
-				<figcaption>Jalapeno&nbsp;Poppers<br><span class="jpMenu">ハラペーニョポッパー</span></figcaption>
-			</figure>
-			<figure id="food09">
-				<a class=pop href="#">
+			<figcaption>Jalapeno&nbsp;Poppers<br><span class="jpMenu">ハラペーニョポッパー</span></figcaption>
+			</a>
+		</figure>
+		<figure id="">
+			<a class="pop" href="#food09">
 				<img src="images/menu_f09.jpg" alt="ポソレの写真">
-				</a>
-				<figcaption>Pozole<br><span class="jpMenu">ポソレ</span></figcaption>
-			</figure>
-		</div><!--menuContainer-->
-		</div><!---->
+			<figcaption>Pozole<br><span class="jpMenu">ポソレ</span></figcaption>
+			</a>
+		</figure>
+	</div><!--.foodContainer-->
+	</div>
 
-		<div class="">
-			<h3 class="drnkMenu">drink</h3>
+
+	<div>
+		<div class="h3Container menuBorder">
+			<h3 class="drnkMenu"><p>drink</p></h3>
+		</div><!--.h3Container menuBorder-->
+
 		<div class="drnkContainer">
-			<figure id="drnk01">
-				<a class=pop href="#">
-				<img src="images/menu_d01.jpg" alt="マルガリータの写真" class="menuPhoto">
+			<figure id="">
+				<a class="pop2" href="#drnk01">
+					<img src="images/menu_d01.jpg" alt="マルガリータの写真">
+					<figcaption>Margarita<br><span class="jpMenu">マルガリータ</span></figcaption>
 				</a>
-				<figcaption>MARGARITA<br><span class="jpMenu">マルガリータ</span></figcaption>
 			</figure>
-				<figure id="drnk02">
-				<a class=pop href="#">
+				<figure id="">
+				<a class="pop2" href="#drnk02">
 				<img src="images/menu_d02.jpg" alt="ビールの写真" class="menuPhoto">
+				<figcaption>Mexican Beer<br><span class="jpMenu">メキシカンビール</span></figcaption>
 				</a>
-				<figcaption>BEER<br><span class="jpMenu">ビール</span></figcaption>
 			</figure>
-			<figure id="drnk03">
-				<a class=pop href="#">
+			<figure id="">
+				<a class="pop2" href="#drnk03">
 				<img src="images/menu_d03.jpg" alt="カクテルの写真" class="menuPhoto">
+				<figcaption>Cocktail<br><span class="jpMenu">カクテル</span></figcaption>
 				</a>
-				<figcaption>COCKTAIL<br><span class="jpMenu">カクテル</span></figcaption>
 			</figure>
-			<figure id="drnk04">
-				<a class=pop href="#">
+			<figure id="">
+				<a class="pop2" href="#drnk04">
 				<img src="images/menu_d04.jpg" alt="ソフトドリンクの写真" class="menuPhoto">
+				<figcaption>Beverage<br><span class="jpMenu">ノンアルコールドリンク</span></figcaption>
 				</a>
-				<figcaption>BEVALAGGE<br><span class="jpMenu">ソフトドリンク</span></figcaption>
 			</figure>
+		</div><!--drnkContainer-->
+	</div><!--.fadeIn-->
 
-
-		</div><!--menuContainer-->
-		</div><!---->
-
-
-	
 	</div><!--wrapper-->
-	
+
 	<footer>
-		<p>&copy;TEX-MEX ALL RIGHTS RESERVED</p>
-		<div class="footerImg">
-			<img src="images/footer.jpg" alt="">
-		</div>
+		<p class="copy">&copy;TEX-MEX ALL RIGHTS RESERVED</p>
+		<div class="footerContainer">
+			<div  class="footerDeco"><img src="images/artega_shita_footer.png" alt=""></div>
+			<div class="footerImg"><img src="images/footer.jpg" alt=""></div>
+			<div class="footerInfo wrapper">
+				<p><span>TEX-MEX</span><br>〒123-4567<br>埼玉県さいたま市南区南区別所7-1-14<br>04&nbsp;-&nbsp;1234&nbsp;-&nbsp;5678</p>
+			</div>
+		</div><!--footerContainer-->
 	</footer>
+
+
+<div id="menu_box" style="display:none">
+
+	<div id="food01" class="colorbox" >
+		<div><h1 class="pop_menuName">Taco<br><span class="jpMenu">タコス</span></h1></div>
+			<div class="popupMenu">
+				<figure class="popImage"><img src="images/pop_f01.jpg" alt="タコスの写真"></figure>
+					<div class="moji">
+						<p class="pop_price">&#9670;１ピース&nbsp;&nbsp;&nbsp;&nbsp;&yen;450<span class="tax">&nbsp;(税込)</span></p>
+						<p class="pop_shosai">野菜とスパイシーなひき肉(タコミート)、チーズ、サルサをトルティアという皮で包んだ、テクスメクスの定番料理です。<br>トルティアはパリパリのハードシェルかソフトシェルからお選びいただけます。</p>
+				</div><!--.moji-->
+			</div><!--popupMenu-->
+	</div><!--food01-->
+	
+	<div id="food02" class="colorbox" >
+		<div><h1 class="pop_menuName">Burrito<br><span class="jpMenu">ブリトー</span></h1></div>
+			<div class="popupMenu">
+				<figure class="popImage"><img src="images/pop_f02.jpg" alt="ブリトーの写真"></figure>
+					<div class="moji">
+						<p class="pop_price">&#9670;チキン&nbsp;&yen;750<span class="tax">&nbsp;(税込)</span><br>&#9670;ビーフ&nbsp;&yen;820<span class="tax">&nbsp;(税込)</span><br>&#9670;エビアボカド&nbsp;&yen;860<span class="tax">&nbsp;(税込)</span></p>
+						<p class="pop_shosai">ソフトシェルのトルティアでビーンズやお肉、お米をたっぷり包んだボリューム満点のお料理です！</p>
+				</div><!--.moji-->
+			</div><!--popupMenu-->
+	</div><!--food02-->
+
+	<div id="food03" class="colorbox" >
+		<div><h1 class="pop_menuName">Fajita<br><span class="jpMenu">ファヒータ</span></h1></div>
+			<div class="popupMenu">
+				<figure class="popImage"><img src="images/pop_f03.jpg" alt="ファヒータの写真"></figure>
+					<div class="moji">
+						<p class="pop_price">&#9670;チキン&nbsp;&yen;1390<span class="tax">&nbsp;(税込)</span><br>&#9670;ビーフ&nbsp;&yen;2190<span class="tax">&nbsp;(税込)</span><br>&#9670;エビアボカド&nbsp;&yen;1560<span class="tax">&nbsp;(税込)</span></p>
+						<p class="pop_shosai">野菜と一緒にグリルしたお肉を、トルティアで包んでいただくお料理です。サルサソース、サワークリーム、ワカモレ、ハラペーニョをお好みで追加してお召し上がりください。</p>
+				</div><!--.moji-->
+			</div><!--popupMenu-->
+	</div><!--food03-->
+
+	<div id="food04" class="colorbox" >
+		<div><h1 class="pop_menuName">Quesadilla<br><span class="jpMenu">ケサディーヤ</span></h1></div>
+			<div class="popupMenu">
+				<figure class="popImage"><img src="images/pop_f04.jpg" alt="ケサディーヤの写真"></figure>
+					<div class="moji">
+						<p class="pop_price">&#9670;チキン&nbsp;&yen;750<span class="tax">&nbsp;(税込)</span><br>&#9670;ビーフ&nbsp;&yen;820<span class="tax">&nbsp;(税込)</span><br>&#9670;エビアボカド&nbsp;&yen;860<span class="tax">&nbsp;(税込)</span></p>
+						<p class="pop_shosai">ソフトシェルのトルティアに、チーズとスパイシーな味付けのひき肉(タコミート)を挟んで焼いたテクスメクスの代表的なお料理です。</p>
+				</div><!--.moji-->
+			</div><!--popupMenu-->
+	</div><!--food04-->
+
+	<div id="food05" class="colorbox" >
+		<div><h1 class="pop_menuName">Nachos<br><span class="jpMenu">ナチョス</span></h1></div>
+			<div class="popupMenu">
+				<figure class="popImage"><img src="images/pop_f05.jpg" alt="ナチョスの写真"></figure>
+					<div class="moji">
+						<p class="pop_price">&#9670;&nbsp;&yen;660<span class="tax">&nbsp;(税込)</span></p>
+						<p class="pop_shosai">チップスの上にサルサソース、チーズ、サワークリーム、ワカモレ、ハラペーニョをのせて焼き上げました。</p>
+				</div><!--.moji-->
+			</div><!--popupMenu-->
+	</div><!--food05-->
+	<div id="food06" class="colorbox" >
+		<div><h1 class="pop_menuName">Chips&nbsp;&amp;&nbsp;Guacamole<br><span class="jpMenu">ワカモレ&amp;チップス</span></h1></div>
+			<div class="popupMenu">
+				<figure class="popImage"><img src="images/pop_f06.jpg" alt="タコスの写真"></figure>
+					<div class="moji">
+						<p class="pop_price">&#9670;&nbsp;&yen;980<span class="tax">&nbsp;(税込)</span></p>
+						<p class="pop_shosai">アボカドから作ったディップソースをチップスにつけてお召し上がりください。当店では作り置きをせず、注文をいただいてから作ります。出来立ての味をぜひお試しください。チップスはお代わり自由です。</p>
+				</div><!--.moji-->
+			</div><!--popupMenu-->
+	</div><!--food06-->
+	
+	<div id="food07" class="colorbox" >
+		<div><h1 class="pop_menuName">Chips&nbsp;&amp;&nbsp;Salsa<br><span class="jpMenu">サルサ&amp;チップス</span></h1></div>
+			<div class="popupMenu">
+				<figure class="popImage"><img src="images/pop_f07.jpg" alt="タコスの写真"></figure>
+					<div class="moji">
+						<p class="pop_price">&#9670;&nbsp;&yen;880<span class="tax">&nbsp;(税込)</span></p>
+						<p class="pop_shosai">トマト、タマネギ、唐辛子を刻んで混ぜ合わせた特製の自家製サルサソースにチップスをつけてお召し上がりください。チップスはお代わり自由です。</p>
+				</div><!--.moji-->
+			</div><!--popupMenu-->
+	</div><!--food07-->
+	
+	<div id="food08" class="colorbox" >
+		<div><h1 class="pop_menuName">Jalapeno Poppers<br><span class="jpMenu">ハラペーニョポッパー</span></h1></div>
+			<div class="popupMenu">
+				<figure class="popImage"><img src="images/pop_f08.jpg" alt="ハラペーニョポッパーの写真"></figure>
+					<div class="moji">
+						<p class="pop_price">&#9670;&nbsp;&yen;750<span class="tax">&nbsp;(税込)</span></p>
+						<p class="pop_shosai">ハラペーニョという唐辛子の中にクリームチーズを詰めてパン粉をつけて揚げたお料理。おつまみに最高です！</p>
+				</div><!--.moji-->
+			</div><!--popupMenu-->
+	</div><!--food08-->
+	
+	<div id="food09" class="colorbox" >
+		<div><h1 class="pop_menuName">Pozole<br><span class="jpMenu">ポソレ</span></h1></div>
+			<div class="popupMenu">
+				<figure class="popImage"><img src="images/pop_f09.jpg" alt="ポソレの写真"></figure>
+					<div class="moji">
+						<p class="pop_price">&#9670;&nbsp;&yen;520<span class="tax">&nbsp;(税込)</span></p>
+						<p class="pop_shosai">豚骨ベースの具だくさんのスープです。食べる直前にフレッシュ野菜（玉ねぎ、ラディッシュ、アボカド、唐辛子、パクチー）をお好みでトッピングをして召し上がれ。</p>
+				</div><!--.moji-->
+			</div><!--popupMenu-->
+	</div><!--food09-->
+
+	<div id="drnk01" class="colorbox" >
+		<div><h1 class="pop_menuName">Margarita<br><span class="jpMenu">マルガリータ</span></h1></div>
+			<div class="popupMenu">
+				<figure class="popImage"><img src="images/pop_d01.jpg" alt="マルガリータの写真"></figure>
+					<div class="moji">
+						<div class="pop_priceD">&#9670;フローズン&nbsp;&nbsp;&nbsp;&nbsp;&yen;650<span class="tax">(税込)</span></div>
+						<p class="pop_shosaiD">メキシカンの定番、テキーラとライムのカクテルです！氷を砕いたタイプ。</p>
+						<div class="pop_priceD">&#9670;フルーツ&nbsp;&nbsp;&nbsp;&nbsp;&yen;820<span class="tax">(税込)</span></div>
+						<p class="pop_shosaiD">季節の果物を使ったフローズンマルガリータ。果物の種類はスタッフにご確認ください。</p>
+						<div class="pop_priceD">&#9670;オンザロック&nbsp;&nbsp;&nbsp;&nbsp;&yen;560<span class="tax">(税込)</span></div>
+						<p class="pop_shosaiD">クラシックなタイプのマルガリータです。</p>
+				</div><!--.moji-->
+			</div><!--popupMenu-->
+	</div><!--drnk01-->
+
+	<div id="drnk02" class="colorbox" >
+		<div><h1 class="pop_menuName">Mexican Beer<br><span class="jpMenu">メキシカンビール</span></h1></div>
+			<div class="popupMenu">
+				<figure class="popImage"><img src="images/pop_d02.jpg" alt="ビールの写真"></figure>
+					<div class="moji">
+						<div class="pop_priceD">&#9670;コロナビール&nbsp;&nbsp;&nbsp;&nbsp;&yen;550<span class="tax">(税込)</span></div>
+						<p class="pop_shosaiD">メキシカンビールといえばこれ！</p>
+						<div class="pop_priceD">&#9670;テカテ&nbsp;&nbsp;&nbsp;&nbsp;&yen;620<span class="tax">(税込)</span></div>
+						<p class="pop_shosaiD">爽やかでキレのよい味わいのラガータイプ。</p>
+						<div class="pop_priceD">&#9670;ソル&nbsp;&nbsp;&nbsp;&nbsp;&yen;590<span class="tax">(税込)</span></div>
+						<p class="pop_shosaiD">苦みが少なく軽い飲み心地が特徴。</p>
+						<div class="pop_priceD">&#9670;ネグラモデロ&nbsp;&nbsp;&nbsp;&nbsp;&yen;650<span class="tax">(税込)</span></div>
+						<p class="pop_shosaiD">カラメルの香りが豊かなダークモルトです。</p>
+						<p class="pop_tsuiki">※日本のビールもご用意しております。</p>
+				</div><!--.moji-->
+			</div><!--popupMenu-->
+	</div><!--drnk02-->
+
+		<div id="drnk03" class="colorbox" >
+		<div><h1 class="pop_menuName">Cocktail<br><span class="jpMenu">カクテル</span></h1></div>
+			<div class="popupMenu">
+				<figure class="popImage"><img src="images/pop_d03.jpg" alt="カクテルの写真"></figure>
+					<div class="moji">
+						<div class="pop_priceD">&#9670;パローマ&nbsp;&nbsp;&nbsp;&nbsp;&yen;580<span class="tax">(税込)</span></div>
+						<p class="pop_shosaiD">テキーラとグレープフルーツジュースを炭酸で割ったさわやかなカクテル。</p>
+						<div class="pop_priceD">&#9670;テキーラサンライズ&nbsp;&nbsp;&nbsp;&nbsp;&yen;750<span class="tax">(税込)</span></div>
+						<p class="pop_shosaiD">テキーラ特有の風味とオレンジジュースの果汁感がマッチしたフルーティな味わいです。</p>
+						<div class="pop_priceD">&#9670;ピニャコラーダ&nbsp;&nbsp;&nbsp;&nbsp;&yen;850<span class="tax">(税込)</span></div>
+						<p class="pop_shosaiD">ラムにココナッツミルク、パイナップルジュースを加えたたトロピカルなカクテル。</p>
+						<p class="pop_tsuiki">※その他にも各種カクテルお作りします。</p>
+				</div><!--.moji-->
+			</div><!--popupMenu-->
+	</div><!--drnk03-->
+
+		<div id="drnk04" class="colorbox" >
+		<div><h1 class="pop_menuName">Beverage<br><span class="jpMenu">ノンアルコールドリンク</span></h1></div>
+			<div class="popupMenu">
+				<figure class="popImage"><img src="images/pop_d04.jpg" alt="ジュースの写真"></figure>
+					<div class="moji">
+						<div class="pop_priceDB">&#9670;サンセットブリーズ&nbsp;&nbsp;&nbsp;&nbsp;&yen;580<span class="tax">(税込)</span></div>
+						<div class="pop_priceDB">&#9670;ソノラサンライズ&nbsp;&nbsp;&nbsp;&nbsp;&yen;580<span class="tax">(税込)</span></div>
+						<div class="pop_priceDB">&#9670;シャーリーテンプル&nbsp;&nbsp;&nbsp;&nbsp;&yen;580<span class="tax">(税込)</span></div>
+						<div class="pop_priceDB">&#9670;ティーレモネード&nbsp;&nbsp;&nbsp;&nbsp;&yen;490<span class="tax">(税込)</span></div>
+						<div class="pop_priceDB">&#9670;ジンジャーミント&nbsp;&nbsp;&nbsp;&nbsp;&yen;490<span class="tax">(税込)</span></div>
+						<div class="pop_priceDB">&#9670;各種ソフトドリンク&nbsp;&nbsp;&nbsp;&nbsp;&yen;390<span class="tax">(税込)</span></div>
+
+				</div><!--.moji-->
+			</div><!--popupMenu-->
+	</div><!--drnk04-->
+
+</div><!--#menu_box display:none-->
 
 </body>
 </html>

@@ -2,85 +2,120 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<title>TEX-MEX | メキシカン</title>
-	
+	<title>TEX-MEX || メキシカン</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><!--googlefont-->
-<link rel="stylesheet" href="css/normalize.css"><!--リセット-->
-<link rel="stylesheet" href="css/style.css">
-
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><!--googlefont-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet"><!--googlefont-->
+	<script src="js/jquery-2.2.4.min.js"></script><!--jquery-->
+	<script src="js/jquery.flexslider-min.js"></script><!--flexsliderのプラグイン-->
+	<script src="js/script_flexslider.js"></script><!--flexsliderjs-->
+	<script src="js/script.js"></script><!--オリジナルjs-->
+	<link rel="stylesheet" href="css/flexslider.css"><!--flexsliderのcss-->
+	<link rel="stylesheet" href="css/style.css"><!--オリジナルのcssは最後-->
+	<link rel="icon" type="image/png" href="images/fabicon.png">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 <body>
 	<header>
-	<div class="pageHeader">
-		<div class="maxWrapper">
-			<h1 class="headerLogo">
+	<div id="header" class="pageHeader">
+		<div id="headerLogo" class="maxWrapper">
+			<h1 class="headerLogo_texmex">
 				<a href="index.html"><img src="images/logo.svg" alt="メキシカンの店TEX-MEXのロゴ"></a>
 			</h1>
 		</div><!--maxWrapper-->
-			<nav>
-				<div class="nav">
+			<nav id="headerNav" class="hNav">
+				<div class="hNavContainer">
 					<ul class="mainNav">
-						<li><a href="#">menu</a></li>
-						<li><a href="#">news</a></li>
-						<li><a href="#">about</a></li>
+						<li><a href="index.html">top</a></li>
+						<li><a href="menu.html">menu</a></li>
+						<li><a href="news.html">news</a></li>
+						<li><a href="about.html">about</a></li>
+<!--						<li><a href="about.html">about</a></li>-->
 					</ul>
-				</div><!--nav-->
+				</div><!--hNavContainer-->
 			</nav>
 		</div><!--pageHeader-->
 	</header>
-
+	
 <div class="wrapper">
-
 	<div class="mainContent">
-		<div id="topSlider" class="mainImage">
-			<img src="images/top_mainImage01.jpg" alt="タコスの写真">
-		</div><!--mainImage-->
+		<div><div id="topSlider" class="mainImage flexslider wrapper">
+				<ul class="slides">
+					<li><img src="images/top_mainImage01.jpg" alt="タコスの写真"></li>
+					<li><img src="images/top_mainImage02.jpg" alt="ブリトーの写真"></li>
+					<li><img src="images/top_mainImage03.jpg" alt="ビールの写真"></li>
+					<li><img src="images/top_mainImage04.jpg" alt="ポソレの写真"></li>
+				</ul>
+			</div><!--#topSlider .mainImage--></div>
 	</div><!--mainContent-->
 
 	<div class="subContent">
-		<h2 class="welcome">
-			TEX-MEXへようこそ
-		</h2>
-		<div class="intro">
-		<p>Tex-Mex（テクス・メクス）とは&nbsp;アメリカで食べられているテキサス風のメキシコ料理です。<br>メキシコから伝わった味に&nbsp;アメリカのスパイスやチーズが融合してTex-Mexになりました。<br>日本で食べられているメキシカンと言うと&nbsp;このTex-Mexであることがほとんどです。</p>
-		<p>日本人にはまだ馴染みのうすいTex-Mexは&nbsp;実は野菜や豆類をたくさん使った意外とヘルシーなお料理。<br>当店ではフレッシュな食材を使い&nbsp;身体にも嬉しいお料理を提供しております</p>
-		<p>辛いものが好き、スパイスの効いた料理が好き、新鮮な野菜が食べたい、というあなた。<br>ぜひ一度Tex-Mexをお試しあれ！！皆様のご来店をお待ちしております。</p>
-		</div><!--intro-->
-		<div class="button">
-			<div class="menuBtn"><a href="#"><img src="images/button_menu.png" alt="メニューページへ">MENU</a></div>
-			<div class="newsBtn"><a href="#"><img src="images/button_news.png" alt="ニュースページへ">NEWS</a></div>
-			<div class="aboutBtn"><a href="#"><img src="images/button_about.png" alt="お店について">ABOUT</a></div>
-		</div><!--button-->
+				<div class="welcomeContent wrapper">
+			<div class="welcomeHako">
+				<span class="welcomeLine"></span>
+				<h2 class="welcome">
+				WELCOME to TEX-MEX
+				</h2>
+				<span class="welcomeLine"></span>
+			</div><!--welcomeHako-->
+		</div><!--.welcomeContent-->
+
+		<div class="introContainer wrapper">
+			<div class="intro wrapper">
+				<h3 class="intro01"><span>TEX-MEXは&nbsp;"おいしい"</span></h3>
+				<p>Tex-Mex（テクス・メクス）とは&nbsp;アメリカで食べられているテキサス風のメキシコ料理です。<br>メキシコから伝わった味に&nbsp;アメリカのスパイスやチーズが融合してTex-Mexになりました。<br>日本で食べられているメキシカンと言うと&nbsp;このTex-Mexであることがほとんどです。</p>
+				<h3 class="intro02"><span>TEX-MEXは&nbsp;"ヘルシー"</span></h3>
+				<p>Tex-Mexは野菜や豆類をたくさん使った&nbsp;意外とヘルシーなお料理。<br>当店ではフレッシュな食材を使い&nbsp;身体にも嬉しいお料理を提供しております。</p>
+				<h3 class="intro03"><span>TEX-MEXは&nbsp;"楽しい"</span></h3>
+				<p>辛いものが好き、スパイスの効いた料理が好き、新鮮な野菜が食べたい、というあなた。<br>おいしいマルガリータと一緒にTex-Mexをお試しあれ！！<br>皆様のご来店をお待ちしております。</p>
+			</div><!--intro-->
+
+		</div><!--introContainer-->
+		<nav class="btnNav wrapper">
+			<div class="btnContainer wrapper">
+				<ul class="btn">
+					<li class="menuBtn"><a href="menu.html"><img src="images/button_menu.jpg" alt="メニューページへ">MENU</a></li>
+					<li class="newsBtn"><a href="news.html"><img src="images/button_news.jpg" alt="ニュースページへ">NEWS</a></li>
+					<li class="aboutBtn"><a href="about.html"><img src="images/button_about.jpg" alt="お店について" >ABOUT</a></li>
+				</ul>
+			</div><!--btnContainer-->
+		</nav>
 	</div><!--subContent-->
 	
-	<div class="mapInfo">
-	<div id=map><p>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254.67100992789452!2d139.64930795453563!3d35.8460672854554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ea6210cbff23%3A0xd97ed185d7a4e2!2z5q2m6JS15rWm5ZKMIDd0aCBBdmU!5e0!3m2!1sja!2sjp!4v1625713736249!5m2!1sja!2sjp" allowfullscreen="" loading="lazy"></iframe></p>
-	</div><!--#map-->
-	<div class="shopInfo">
-		<h4 class="shopname">TEX-MEX(テクスメクス)</h4>
-		<p>◆営業時間<br>
-				&nbsp;&nbsp;LUNCH:&nbsp;&nbsp;&nbsp;11:00-15:00<br>
-				&nbsp;&nbsp;DINNER:&nbsp;&nbsp;18:00-22:00<br>
-				&nbsp;&nbsp;定休日:&nbsp;&nbsp;&nbsp;&nbsp;火曜日<br>
+	<div class="mapContainer wrapper">
+		<div id=map class="mapBorder wrapper">
+			<p><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HeKdXzdP7Ms9ObnbRJJ7cTU11EJvCutg" width="640" height="480"></iframe></p>
+		</div><!--#map.mapBorder-->
+		<div class="shopInfo">
+			<h4 class="shopBorder shopName">TEX-MEX(テクスメクス)</h4>
+			<p>&#9670;&nbsp;営業時間&nbsp;&#9670;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;LUNCH&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;11:00&nbsp;-&nbsp;15:00<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;DINNER&nbsp;:&nbsp;&nbsp;&nbsp;18:00&nbsp;-&nbsp;22:00<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;定休日&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;火曜日<br>
 
-				◆〒123-4567<br>
-				&nbsp;&nbsp;埼玉県さいたま市南区南区別所７丁目１−１４<br>
-				◆お問い合わせ<br>
-				&nbsp;&nbsp;04-1234-5678</p>
-	</div><!--shopInfo-->
-	</div><!--mapInfo-->
+					&#9670;&nbsp;住所&nbsp;&#9670;<br>&nbsp;&nbsp;武蔵浦和駅から徒歩７分<br>
+					&nbsp;&nbsp;〒123-4567<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;埼玉県さいたま市南区南区別所7-1-14<br>
+					&#9670;&nbsp;お問い合わせ&nbsp;&#9670;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;04&nbsp;-&nbsp;1234&nbsp;-&nbsp;5678</p>
+		</div><!--shopInfo-->
+	</div><!--mapContainer-->
 	
 	</div><!--wrapper-->
 	
 	<footer>
-		<p>&copy;TEX-MEX ALL RIGHTS RESERVED</p>
-		<div class="footerImg">
-			<img src="images/footer.jpg" alt="">
-		</div>
+		<p class="copy">&copy;TEX-MEX ALL RIGHTS RESERVED</p>
+		<div class="footerContainer">
+			<div  class="footerDeco"><img src="images/artega_shita_footer.png" alt=""></div>
+			<div class="footerImg"><img src="images/footer.jpg" alt=""></div>
+			<div class="footerInfo wrapper">
+				<p><span>TEX-MEX</span><br>〒123-4567<br>埼玉県さいたま市南区南区別所7-1-14<br>04&nbsp;-&nbsp;1234&nbsp;-&nbsp;5678</p>
+			</div>
+		</div><!--footerContainer-->
 	</footer>
 
 </body>
